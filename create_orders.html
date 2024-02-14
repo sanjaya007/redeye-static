@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Eye</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <div class="container-fluid nav-box py-4 px-5">
+      <div class="nav-heading flex-row-sb">
+        <a href="./index.html" class="logo-container">
+          <img src="./assets/images/logo3.png" alt="logo" />
+        </a>
+        <a href="./profile.html" class="info-container flex-css">
+          <div class="image-container">
+            <img src="./assets/images/img1.png" alt="profile" />
+          </div>
+          <div class="name-container">
+            <p class="pl-3">Ryan Wong</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- header links  -->
+    <div class="container-fluid header-link-box pt-1 pb-4 px-5">
+      <div class="link-box flex-row-sb">
+        <div class="latest-link link flex-css">
+          <div class="live flex-css pr-4">
+            <i class="fas fa-play-circle live-icon icon"></i>
+            <p class="pl-2">Live</p>
+          </div>
+          <div class="recent flex-css">
+            <i class="fas fa-history recent-icon icon"></i>
+            <p class="pl-2">Recent</p>
+          </div>
+        </div>
+        <div class="history-link link">
+          <div class="history flex-css">
+            <i class="fas fa-clock history-icon icon"></i>
+            <p class="pl-2">History</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- create orders  -->
+    <div class="container-fluid create-orders-box">
+      <div class="container create-orders-container py-5 px-5 mx-auto">
+        <div class="heading mb-5">
+          <h1>Set your order limits</h1>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <div class="orders-form">
+              <div class="form-group mb-4">
+                <label for="cat" class="mb-2">Broadcast Category</label>
+                <select id="cat" class="form-control">
+                  <option>Fire</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group mb-4">
+                <label for="region" class="mb-2">Broadcast Region</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter a region I.E New York City US"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <label for="con" class="mb-2">Confirmations</label>
+                <select id="con" class="form-control">
+                  <option>1</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group mb-4">
+                <label for="offer" class="mb-2">Offer</label>
+                <input type="text" class="form-control" placeholder="Offer" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="orders-desc">
+              <p class="mb-5">
+                Be advised that in order to execute this order <br />
+                you must have the order balance available in <br />
+                your local wallet/poo
+              </p>
+              <div class="agreement">
+                <h1 class="mb-3">Agreement</h1>
+                <p>
+                  By submitting this form you agree to allow <br />
+                  RedEye to contact relevant sources and <br />
+                  validate Your membership and Authority to <br />
+                  represent the organization named above
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container flex-css py-5">
+          <a href="./my_orders.html">
+            <button>Submit</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

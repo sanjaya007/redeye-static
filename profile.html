@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Eye</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <div class="container-fluid nav-box py-4 px-5">
+      <div class="nav-heading flex-row-sb">
+        <a href="./index.html" class="logo-container">
+          <img src="./assets/images/logo3.png" alt="logo" />
+        </a>
+        <a href="./profile.html" class="info-container flex-css">
+          <div class="image-container">
+            <img src="./assets/images/img1.png" alt="profile" />
+          </div>
+          <div class="name-container">
+            <p class="pl-3">Ryan Wong</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- header links  -->
+    <div class="container-fluid header-link-box pt-1 pb-4 px-5">
+      <div class="link-box flex-row-sb">
+        <div class="latest-link link flex-css">
+          <div class="live flex-css pr-4">
+            <i class="fas fa-play-circle live-icon icon"></i>
+            <p class="pl-2">Live</p>
+          </div>
+          <div class="recent flex-css">
+            <i class="fas fa-history recent-icon icon"></i>
+            <p class="pl-2">Recent</p>
+          </div>
+        </div>
+        <div class="history-link link">
+          <div class="history flex-css">
+            <i class="fas fa-clock history-icon icon"></i>
+            <p class="pl-2">History</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- whitelist presale  -->
+    <div class="container-fluid profile-box">
+      <div class="container profile-container py-4 px-5 mx-auto">
+        <div class="account-info flex-row-start mb-5">
+          <div class="image-container">
+            <img src="./assets/images/img2.png" alt="profile" />
+          </div>
+          <div class="details-container px-3">
+            <div class="name flex-row-start mb-1">
+              <p class="pr-2">Ryan Wong</p>
+              <a href="#">
+                <i class="fas fa-edit"></i>
+              </a>
+            </div>
+            <div class="idcode flex-row-start">
+              <p class="pr-2">34fdfseret35s</p>
+              <a href="#">
+                <i class="fas fa-clone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="balance-info flex-row-start mb-2">
+          <div class="balance-details py-3 px-5 mr-5">
+            <div class="heading flex-row-sb mb-3">
+              <p>Balance</p>
+              <p>
+                <img src="./assets/images/eye.JPG" alt="eye" class="mr-1" />
+                <span>223.323</span>
+              </p>
+            </div>
+            <!-- <div class="input-container mb-4">
+            <input type="text" placeholder="0.00" class="mr-3" />
+              <span>Max</span> <br />
+            </div>
+            <button class="buy-btn">Buy Now</button> -->
+          </div>
+          <div class="bio-desc ml-5">
+            <div class="bio-heading flex-row-sb mb-2">
+              <h1>Bio</h1>
+              <i class="fas fa-edit"></i>
+            </div>
+            <p class="pr-3">
+              These are your current RED tokens, they may be viewed and
+              consulted here and will be made available to your wallet after the
+              Private Sale prior to listing the token on the exchanges
+            </p>
+          </div>
+        </div>
+        <div class="my-orders-btn mb-4">
+          <a href="./my_orders.html">
+            <button>
+              My Orders
+              <img
+                src="./assets/images/right_arrow.png"
+                class="ml-2"
+                alt="arrow"
+              />
+            </button>
+          </a>
+        </div>
+        <div class="broadcast-history">
+          <div class="heading mb-3">
+            <h1>Broadcast history</h1>
+            <p>
+              <span>Broadcasts 34</span>
+              <span>Watch hours 234</span>
+              <span>Sales total 2134343</span>
+            </p>
+          </div>
+          <div class="content">
+            <div class="tabs flex-row-sb mb-3">
+              <div class="tab-wrapper left"></div>
+              <span class="tab-btn" id="all-content">All</span>
+              <span class="tab-btn" id="on-sale-content">On Sale</span>
+            </div>
+            <div class="row content-box" id="all-content">
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b1.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b2.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b3.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b4.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row content-box hidden" id="on-sale-content">
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b4.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b5.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b6.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-3">
+                <div class="list-box">
+                  <div class="video-container">
+                    <div class="play-wrapper flex-css">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                    <img src="./assets/images/b7.png" alt="video" />
+                  </div>
+                  <div class="video-info pl-1 py-2">
+                    <h1>Jet crash</h1>
+                    <p>New York 5/22/21</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script1.js"></script>
+  </body>
+</html>

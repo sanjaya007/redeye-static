@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Eye</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 px-5">
+      <img src="./assets/images/logo.png" class="logo" alt="logo" />
+      <button
+        class="navbar-toggler p-1"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./marketplace.html">Marketplace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./whitelist.html">White Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#problemContainer">Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solutionContainer">Solution</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#presaleContainer">Presale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#distributionContainer">Distribution</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactContainer">Contact</a>
+          </li>
+        </ul>
+        <div class="account">
+          <a href="./profile.html" class="register-link ml-3"> Sign In </a>
+        </div>
+      </div>
+    </nav>
+    <div class="vector-back">
+      <!-- header -->
+      <div class="container-fluid header-box py-5 px-5">
+        <div class="video-container">
+          <video autoplay muted loop id="newsVideo">
+            <source src="./assets/videos/news.mp4" type="video/mp4" />
+          </video>
+          <div class="play-pause-btn flex-css">
+            <button class="switch-btn flex-row-sa">
+              <span> play </span>
+              <span> pause </span>
+              <span class="switch"></span>
+            </button>
+          </div>
+        </div>
+        <div class="header-wrapper"></div>
+        <div class="row py-5">
+          <div class="col-lg-6">
+            <div class="header-info">
+              <h1 class="mb-4">
+                To CONTROL the media you <br />
+                must become THE MEDIA
+              </h1>
+              <p class="mb-3">
+                Lets turn every lens on every phone into a window to the world,
+                <br />
+                every mobile device user into a potential correspondent.
+              </p>
+              <p class="mb-5">
+                -Community Governed <br />
+                -Unedited, uncut, unbiased <br />
+                -Every broadcast is an NFT uniquely owned by its creator or
+                <br />
+                token holder
+              </p>
+              <div class="input-container flex-row-sb">
+                <input type="text" placeholder="Email address..." />
+                <a href="./marketplace.html">
+                  Get Started
+                  <img src="./assets/images/right_arrow.png" alt="arrow" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="media-image">
+              <!-- <div class="image-container">
+              <img src="./assets/images/media.png" alt="media" />
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- links-banner -->
+      <div class="container-fluid links-banner-box py-3 px-5">
+        <div class="links-box">
+          <h1 class="text-center">BECOME THE MEDIA.</h1>
+          <!-- <div class="image-container flex-css">
+          <img src="./assets/images/brands.png" alt="brands" />
+        </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- impulse box  -->
+    <div class="container-fluid impulse-box py-5 px-5">
+      <div class="row py-5">
+        <div class="col-lg-6 flex-css">
+          <div class="impulse-image flex-css">
+            <div class="image-container flex-css">
+              <img src="./assets/images/mobile.png" alt="graph" />
+            </div>
+            <div class="circle circle1 flex-css">
+              <p>Shoot</p>
+            </div>
+            <div class="circle circle2 flex-css">
+              <p>Stream</p>
+            </div>
+            <div class="circle circle3 flex-css">
+              <p>Mint</p>
+            </div>
+            <div class="circle circle4 flex-css">
+              <p>Distribute</p>
+            </div>
+            <div class="circle circle5 flex-css">
+              <p>Get Paid</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 flex-css">
+          <div class="impulse-info">
+            <p class="what-is-impulse mb-3">What is Impulse RedEye?</p>
+            <h1 class="mb-4">
+              The world’s first Decentralized Breaking <br />
+              News Network.
+            </h1>
+            <p class="mb-3">
+              RedEyed aims to create the worlds first truly <br />
+              decentralized, community governed Global Breaking <br />
+              News Network.
+            </p>
+            <p class="mb-3">
+              We aim to reduce the bias and imbalance in the way <br />
+              breaking and developing stories are presented to the <br />
+              world.
+            </p>
+            <p>
+              Our community will remove the foggy big capital narrative <br />
+              goggles and let the global community see things as they <br />
+              are raw and uncut once again.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- links-banner -->
+    <div class="container-fluid links-banner-box py-3 px-5">
+      <div class="links-box">
+        <h1 class="text-center">Uncut, Unedited, Live.....</h1>
+        <!-- <div class="image-container flex-css">
+          <img src="./assets/images/brands.png" alt="brands" />
+        </div> -->
+      </div>
+    </div>
+    <!-- problem box -->
+    <div
+      class="container-fluid pcs-common problem-box py-5 px-5"
+      id="problemContainer"
+    >
+      <div class="pcs-heading py-5 mb-5">
+        <h1 class="text-center mb-4">Problems and Challenges today’s Media</h1>
+        <p class="text-center">
+          For the decades we have known that the current media system is mainly
+          controlled by a <br />
+          few interest groups, they determine what is a story and what isn’t.
+        </p>
+      </div>
+      <div class="row px-5">
+        <div class="col-lg-6 flex-row-center">
+          <div class="box box1">
+            <h1 class="mb-2">The problems and challenges of today’s media</h1>
+            <p>
+              At any given moment an untold number of good, bad, horrible, funny
+              and or uplifting stories are developing all over the world.
+            </p>
+            <p>
+              In our view there are 3 types of stories, BREAKING, DEVELOPING and
+              OLD.
+            </p>
+            <p>
+              When, How and If those stories get to you will be determined by a
+              lot of factors some of which are listed below:
+            </p>
+            <ul class="ml-3">
+              <li>
+                The medium or network by which it’s sourced before it gets to
+                you.
+              </li>
+              <li>
+                The groups of interests it may impact along the way, this impact
+                can be financial as well as political.
+              </li>
+              <li>
+                The region or country where you live, as local authorities my
+                seek to keep the incident localized.
+              </li>
+              <li>
+                Local Networks capacity to get someone onto the scene on time,
+                even those with news choppers fail to get there at the moment it
+                breaks.
+              </li>
+              <li>
+                Editors willingness to allow a story to move forward without
+                succumbing to pressure from above.
+              </li>
+              <li>
+                The networks ability to determine the veracity or authenticity
+                of the story and its actors as well as the setting of it.
+              </li>
+              <li>
+                If its printed then its old, edited and largely manipulated.
+              </li>
+              <li>
+                With the current system, by design and how it is structued you
+                will always have an older version of the story that is
+                handpicked and curated for you.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="box box2">
+            <div class="pcs-list">
+              <h1>Too Slow to get to there on time.</h1>
+              <p>
+                Even networks with massive resources in some of the largest
+                metro areas simply cannot get there on time. By the time they
+                manage to get a manicured face onto the scene with a broadcast
+                team it is no longe a breaking story, it is rather a developing
+                one and they are actively trying to collect details on what
+                transpired before.
+              </p>
+              <p>
+                If the incident is across borders the network is leftt scouring
+                social media and other outlets to be able to bring it to their
+                audiences homes.
+              </p>
+            </div>
+            <div class="pcs-list">
+              <h1>Sourced and curated for a desired effect</h1>
+              <p>
+                Most news and stories you see, hear or read about are sourced
+                from a massive central source that puts forward a narrative that
+                then sets the tone for any incident.
+              </p>
+              <p>
+                By the time you see it, your reactions have already been
+                expected and planned for. You may not even be getting news but
+                actually a scripted version of events if you get the events at
+                all and in the correct sequence.
+              </p>
+            </div>
+            <div class="pcs-list">
+              <h1>Fake news...</h1>
+              <p>
+                In an attempt to keep up with social media, many networks have
+                moved to retweet or re-broadcast content they pick up online.
+                Sometimes they run with a story or narrative that is entirely
+                false and leads to embarrassing retractions.
+              </p>
+              <p>
+                As technology grows, with deepfakes among other advances, this
+                will only increase and make it even harder for journalists to
+                keep up with the onslaught of unverified content made available
+                to the public at large.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- solution box -->
+    <div
+      class="container-fluid pcs-common solution-box py-5 px-5"
+      id="solutionContainer"
+    >
+      <div class="pcs-heading py-5 mb-5">
+        <h1 class="text-center mb-4">Our Solution</h1>
+        <p class="text-center">
+          There are 5.27 billion unique mobile phone users in the world today,
+          according to the latest <br />
+          data from GSMA Intelligence.
+        </p>
+      </div>
+      <div class="row px-5">
+        <div class="col-lg-6">
+          <div class="box box2">
+            <div class="pcs-list">
+              <h1>Every phone is a mic and camera</h1>
+              <p>
+                With RedEyed every mobile device is a potential microphone and
+                camera, turning every user into a potential correspondent for
+                the breaking story.
+              </p>
+              <p>
+                This completely decentralizes the source of the story and
+                eliminates any narrative beyond what is captured by those in the
+                immediate vicinity.
+              </p>
+            </div>
+            <div class="pcs-list">
+              <h1>Sourced and curated by the community</h1>
+              <p>
+                With RedEyed the source of every story is a community user, it
+                is confirmed by other community users with live video from the
+                same scene and it is unedited, unscripted and live.
+              </p>
+              <p>
+                The way our app works, nothing can be uploaded into our network
+                unless it is recorded live. Every piece of footage is unique and
+                every user own’s each piece of footage until ownership is
+                transfered via auction in our NFT marketplace.
+              </p>
+            </div>
+            <div class="pcs-list">
+              <h1>Instant access to the news room</h1>
+              <p>
+                Our NFT marketplace allows News organizations to BID on Breaking
+                stories by the minute as they go live.
+              </p>
+              <p>
+                This gives the News room an opportunity to keep thier audiences
+                informed until they can have a crew on the scene to transition
+                into a developing story. Once ownership is transfered, the new
+                owner gets direct access and can use it at their discretion.
+                RedEyed always retains broadcast access while the story is live
+                and as proof of origin. If it was on RedEyed then it was here
+                first. If you hold the token its yours forever.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 flex-row-center">
+          <div class="box box1">
+            <h1 class="mb-2">The Solution was already here.</h1>
+            <p>
+              On a daily basis the large majority of all mobile devices are
+              active on the minute of every hour.
+            </p>
+            <p>Each of these devices has a camera with few exceptions.</p>
+            <p>
+              What happens if we turn each lens into a potential correspondent
+              for media outlets and each user into a digital reporter? :
+            </p>
+            <ul class="ml-3">
+              <li>
+                Mobile users are always on the scene at the exact moment a story
+                breaks.
+              </li>
+              <li>
+                With our App each user can only shoot live, unedited, uncut
+                footage.
+              </li>
+              <li>
+                The footage is streamed live into our platform where it is
+                available to our entire Apps audience.
+              </li>
+              <li>
+                The same footage is also immediately made available to all Media
+                Outlets who may wish to expand it to their local audience as it
+                happens live.
+              </li>
+              <li>
+                Every broadcast is a unique NFT assigned to the user on the
+                scene, so the source is unequivocal.
+              </li>
+              <li>
+                News Organizations will be able to Bid instantly for every piece
+                of live footage as it enters our marketplace and buy the rights
+                to re-transmit to their respectiveaudiences. All profits
+                excepting Minting and platfrom fees go the creator.
+              </li>
+              <li>
+                A story is validated as more POVs are streamed for the same
+                incident or validated by the community or as it is developed by
+                local media.
+              </li>
+              <li>
+                Every piece of footage is documented from its creation for the
+                rest of its existence, a chain of custody supported by its
+                unique address.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our token  -->
+    <div
+      class="container-fluid our-token-box flex-css py-5 px-5"
+      id="presaleContainer"
+    >
+      <div class="container">
+        <div class="token-box">
+          <h1 class="text-center mb-5">Our Token</h1>
+          <p class="text-center">
+            The RedEye token is the source that powers our community and
+            ecosytem, as the token is <br />
+            utilized by users to mint their broadcasts into NFTs as well as the
+            currency with which <br />
+            news orgs and buyers can acquire footage in our marketplace. It is
+            also the only accepted <br />
+            currency to run Ads on our platform, and how our creators are paid a
+            share of all profits <br />
+            their videos generate from Ad sales Fiat will be accepted for Ads
+            but immediately <br />
+            converted to RedEye.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- presale banner  -->
+    <div class="container-fluid presale-banner-box flex-css py-5 px-5">
+      <div class="container">
+        <div class="presale-desc">
+          <h1 class="text-center mb-3">Institutional Presale</h1>
+          <p class="text-center mb-3">
+            This presale is designed for institutions, mainly news and media
+            outlets to get <br />
+            early access to the RedEyed token in order to be able to gain access
+            to the <br />
+            breaking content as it is made available in our marketplace.
+          </p>
+          <p class="text-center">
+            There is a set cap to each participant for obvious reasons, cannot
+            let one <br />
+            outlet simply buy the narrative.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- presale details  -->
+    <div class="container-fluid presale-details-box py-5 px-5">
+      <div class="details px-3">
+        <h1 class="mb-3">Presale Details</h1>
+        <ul class="details-list pl-3 mb-5">
+          <div class="row mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>START DATE</p>
+                <p>June 15th 2021</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>END DATE</p>
+                <p>July 15th 2021</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>AVAILABLE TOKENS</p>
+                <p>10.000.000.000 (10% Max)</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>ACCEPTED CURRENCY</p>
+                <p>BNB AND ETH</p>
+              </li>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>EXCHANGE RATE</p>
+                <p>0.005 Per RedEye</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>MINIMUM AMT.</p>
+                <p>$1000.00</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>Maximum AMOUNT/INST</p>
+                <p>$50.000.00</p>
+              </li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <li>
+                <p>AUDITED BY:</p>
+                <p>HAS NOT BEEN AUDITED</p>
+              </li>
+            </div>
+          </div>
+        </ul>
+        <div class="join-btn-container">
+          <a href="#" class="join-btn">
+            Join the Whitelist
+            <img src="./assets/images/right_arrow.png" alt="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- presale clock  -->
+    <div class="container-fluid clock-box py-5 px-5">
+      <h1 class="text-center mb-4">PRESALE CLOCK</h1>
+      <div class="clock-container flex-css py-5 px-2">
+        <p class="countdown py-5">HH:MM:SS</p>
+        <div class="clock-wrapper"></div>
+      </div>
+    </div>
+    <!-- institutional presale  -->
+    <div class="container-fluid institutional-box py-5 px-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="institutional-info">
+            <h1 class="mb-4">
+              Institutional <br />
+              Presale
+            </h1>
+            <p class="mb-3">
+              June 15th 2021 <br />
+              5.000.000.000 RedyEye
+            </p>
+            <p class="mb-3">@ $0.01/RedEye</p>
+            <p class="mb-3">
+              Total Raised <br />
+              50.000.000
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="institutional-info">
+            <h1 class="mb-4">
+              Creator <br />
+              Presale
+            </h1>
+            <p class="mb-3">
+              After Institutional <br />
+              2.000.000.000 RedyEye
+            </p>
+            <p class="mb-3">@ $0.02/RedEye</p>
+            <p class="mb-3">
+              Total Raised <br />
+              25.000.000
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="institutional-info">
+            <h1 class="mb-4">
+              Private <br />
+              Sale
+            </h1>
+            <p class="mb-3">
+              After Creator Presale <br />
+              15.000.000.000 RedyEye
+            </p>
+            <p class="mb-3">@ $0.05/RedEye</p>
+            <p class="mb-3">
+              Total Raised <br />
+              200.000.000
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="institutional-info">
+            <h1 class="mb-4">
+              Public <br />
+              Sale ICO
+            </h1>
+            <p class="mb-3">
+              June 15th 2021 <br />
+              15.000.000.000 RedyEye
+            </p>
+            <p class="mb-3">@ $0.05/RedEye</p>
+            <p class="mb-3">
+              Total Raised <br />
+              200.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- chart box -->
+    <div class="container-fluid chart-container" id="distributionContainer">
+      <div class="chart-heading">
+        <h1 class="text-center">
+          Token Distribution and <br />
+          Allocation
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 chart-box flex-css-column">
+          <div class="chart first-chart">
+            <canvas id="firstChart"></canvas>
+          </div>
+          <h1 class="fig-name text-center">Initial Distribution</h1>
+        </div>
+        <div class="col-lg-6 chart-box flex-css-column">
+          <div class="chart second-chart">
+            <canvas id="secondChart"></canvas>
+          </div>
+          <h1 class="fig-name text-center">Funds Allocation</h1>
+        </div>
+      </div>
+    </div>
+    <!-- timeline road map  -->
+    <div class="container-fluid timeline-container vector-parent py-5 px-5">
+      <div class="timeline-heading">
+        <h1 class="text-center mb-3">Show on the road</h1>
+        <p class="text-center">
+          Here’s our road map on how were going to empower you to become <br />
+          the media.
+        </p>
+      </div>
+      <div class="timeline py-5">
+        <div class="container-box left">
+          <div class="content">
+            <h2>2014</h2>
+            <p>
+              The Concept for Impulse RedEyed and the decentralization of
+              breaking news was born.
+            </p>
+          </div>
+        </div>
+        <div class="container-box right">
+          <div class="content">
+            <h2>2015-2019</h2>
+            <p>
+              A centralized version of RedEye site was in the works in
+              Partnership with Manaknight Digital.
+            </p>
+          </div>
+        </div>
+        <div class="container-box left event-starts">
+          <div class="content">
+            <h2>Q1 2020</h2>
+            <p>
+              R&D work to test current blockchain scalabilty to handle large
+              volume NFTs creation.
+            </p>
+          </div>
+        </div>
+        <div class="container-box right">
+          <div class="content">
+            <h2>Q2 2020</h2>
+            <p>
+              Expanded the team to work on cloud infrastrucre to sustain the
+              potential massive inlfux of content.
+            </p>
+          </div>
+        </div>
+        <div class="container-box right event-starts">
+          <div class="content">
+            <h2>Q1 2021</h2>
+            <p>
+              Design and Development of RedEyed App with an NFT decentralized
+              marketplace at its core.
+            </p>
+          </div>
+        </div>
+        <div class="container-box left">
+          <div class="content">
+            <h2>Q2 2021</h2>
+            <p>
+              Institutional Rounds of RedEyed token Creator Rounds of RedEyed
+              token Public Rounds of RedEyed token.
+            </p>
+          </div>
+        </div>
+        <div class="container-box right">
+          <div class="content">
+            <h2>Q3 2021</h2>
+            <p>
+              Beta Launch of RedEyed App and massive Stress testing Development
+              of Web Dash.
+            </p>
+          </div>
+        </div>
+        <div class="container-box left">
+          <div class="content">
+            <h2>Q4 2021</h2>
+            <p>
+              Controlled rolll out of RedEyed App and its NFT Marketplace. Roll
+              out RedEyeD Advertising Web Potal.
+            </p>
+          </div>
+        </div>
+        <div class="container-box right">
+          <div class="content">
+            <h2>2022</h2>
+            <p>
+              Expansion of RedEyed services R&D into Blockchain scalability
+              improvements
+            </p>
+          </div>
+        </div>
+        <div class="timeline-point first-point flex-css">
+          <p>2014</p>
+        </div>
+        <div class="timeline-point second-point flex-css">
+          <p>2020</p>
+        </div>
+        <div class="timeline-point third-point flex-css">
+          <p>2021</p>
+        </div>
+        <div class="timeline-point end-circle flex-css">
+          <div class="circle circle1 flex-css">
+            <div class="circle circle2 flex-css">
+              <div class="circle circle3 flex-css"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vector-child timeline-vector-rect1"></div>
+      <div class="vector-child timeline-vector-rect2"></div>
+      <div class="vector-child timeline-vector-rect3"></div>
+      <div class="vector-child timeline-vector-rect4"></div>
+    </div>
+    <!-- nft box  -->
+    <div class="container-fluid nft-box py-5 px-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="nft-list">
+            <h1 class="mb-4">
+              Every Phone is a camera <br />
+              - every video an NFT
+            </h1>
+            <ul class="pl-3">
+              <li>Own your videos all across the web for eternity</li>
+              <li>
+                Sell your footage to the highest bidder, you shoot we handle the
+                rest.
+              </li>
+              <li>
+                Push an issue from the local stage to the global stage in
+                minutes.
+              </li>
+              <li>
+                Generate revenue from every ad sold during your videos run time.
+              </li>
+              <li>
+                Become a part of the worlds major networks news room feeds.
+              </li>
+              <li>Adevertise your business directly to a global audience.</li>
+              <li>Become the owner of your own press conferences.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="nft-image flex-css">
+            <div class="image-container">
+              <img
+                src="./assets/images/nft2.jpg"
+                class="img-responsive-img-fluid laptop-ntf"
+                alt="nft"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us  -->
+    <div class="container-fluid contact-box py-5 px-5" id="contactContainer">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="social-update">
+            <h1 class="mb-5">
+              Any question? Reach out to us and we’ll get back to you shortly.
+            </h1>
+            <div class="update-box flex-row-start mb-4">
+              <a href="#" class="flex-css">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <p>Stay updated on Twitter</p>
+            </div>
+            <div class="update-box flex-row-start mb-4">
+              <a href="#" class="flex-css">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <p>Stay updated on Instagram</p>
+            </div>
+            <div class="update-box flex-row-start mb-4">
+              <a href="#" class="flex-css">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <p>Stay updated on Telegram</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-box">
+            <p class="mb-1">Contact</p>
+            <h1 class="mb-2">Get In Touch</h1>
+            <div class="input-container flex-column-start py-2">
+              <input type="text" placeholder="Your name" />
+              <input type="text" placeholder="Email address..." />
+              <textarea cols="35" rows="4" placeholder="Message..."></textarea>
+            </div>
+            <a href="#">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer box  -->
+    <div class="container-fluid footer-box py-5 px-5">
+      <div class="first-footer flex-row-sb py-3">
+        <div class="policy">
+          <div class="logo-container mb-3">
+            <img src="./assets/images/logo2.png" alt="logo" />
+          </div>
+          <div class="policy-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="extra-links flex-row-start">
+          <div class="link-box link1 flex-column-start">
+            <a href="#"> Presentation </a>
+            <a href="#"> Problem </a>
+            <a href="#"> Solution </a>
+          </div>
+          <div class="link-box link2 flex-column-start">
+            <a href="#"> White paper </a>
+            <a href="#"> Presale </a>
+            <a href="#"> Distribution </a>
+          </div>
+          <div class="link-box link3 flex-column-start">
+            <a href="#"> Team </a>
+            <a href="#"> Contact </a>
+          </div>
+        </div>
+      </div>
+      <div class="second-footer flex-row-sb py-3">
+        <div class="copyright">
+          <p>Copyright ©REDeye. All rights reserved.</p>
+        </div>
+        <div class="social-links flex-css">
+          <a href="#" class="flex-css">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="flex-css">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="flex-css">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
+    <script src="./js/chart.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

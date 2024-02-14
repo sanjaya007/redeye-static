@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Eye</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <!-- pops up  -->
+    <div class="connect-wallet-wrapper pop-wrapper hidden flex-css px-2 py-3">
+      <div class="connect-wallet-box pop-box px-4 py-5">
+        <div class="info">
+          <h1 class="text-center mb-4">
+            Please connect your wallet to continue to White List <br />
+            registration.
+          </h1>
+          <p class="mb-4">
+            Your wallet will be connected to your user ID for the <br />
+            purpose of the white list and presale
+          </p>
+        </div>
+        <div class="connect">
+          <h1 class="mb-2">Connect</h1>
+          <ul>
+            <li>Tust wallet</li>
+            <li>Metamask</li>
+            <li>Wallet Connect</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scan-wallet-wrapper pop-wrapper hidden flex-css px-2 py-3">
+      <div class="scan-wallet-box pop-box flex-css-column p-5">
+        <img src="./assets/images/qr.JPG" class="mb-5" alt="qr" />
+        <p class="text-center">Scan with your compitable wallet!</p>
+      </div>
+    </div>
+
+    <div
+      class="purchase-successfull-wrapper pop-wrapper hidden flex-css px-2 py-3"
+    >
+      <div class="purchase-successfull-box pop-box px-4 py-5">
+        <h1 class="text-center mb-2">Purchase Successful</h1>
+        <p class="text-center mb-5">
+          Would you like to patch this broadcast to your channel?
+        </p>
+        <div class="btn-container flex-css">
+          <a href="#" class="text-center">Patch Through</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-category-wrapper pop-wrapper hidden flex-css px-2 py-3">
+      <div class="video-category-box pop-box px-4 py-5">
+        <p class="text-center mb-4">
+          When a video of category {category} in region {region} is <br />
+          available on sale We will place an order or o!er to buy at {o!er}
+          <br />
+          for a total of {o!er.amount
+        </p>
+        <div class="btn-container flex-css">
+          <a href="./purchase_confirmation.html">Confirm</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav bar  -->
+    <div class="container-fluid nav-box py-4 px-5">
+      <div class="nav-heading flex-row-sb">
+        <a href="./index.html" class="logo-container">
+          <img src="./assets/images/logo3.png" alt="logo" />
+        </a>
+        <a href="./purchase_confirmation.html" class="btn-container">
+          <button>Connect Wallet</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- header links  -->
+    <div class="container-fluid header-link-box pt-1 pb-4 px-5">
+      <div class="link-box mobile-link-box flex-row-sb">
+        <div class="latest-link link flex-css">
+          <div class="live flex-css pr-4">
+            <i class="fas fa-play-circle live-icon icon"></i>
+            <p class="pl-2">Live</p>
+          </div>
+          <div class="recent flex-css">
+            <i class="fas fa-history recent-icon icon"></i>
+            <p class="pl-2">Recent</p>
+          </div>
+        </div>
+        <div class="input-container flex-css mx-1">
+          <div class="form-group mr-3">
+            <select id="cat" class="form-control">
+              <option>Global</option>
+              <option>...</option>
+            </select>
+          </div>
+          <a href="./search_category.html">
+            <div class="form-group recent mr-3">
+              <img src="./assets/images/search.png" alt="search" />
+              <input type="text" class="form-control" placeholder="Recent" />
+            </div>
+          </a>
+          <!-- <div class="form-check flex-row-start">
+          <input type="checkbox" class="form-check-input" />
+          <label for="exampleCheck1">On Scale</label>
+        </div> -->
+          <div class="confirm-add">
+            <a href="./purchase_confirmation.html">
+              Confirmed <span><i class="fas fa-plus-circle pl-1"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="history-link link">
+          <div class="history flex-css">
+            <i class="fas fa-clock history-icon icon"></i>
+            <p class="pl-2">History</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- home page  -->
+    <div class="container-fluid homepage-box px-5 pb-5">
+      <div class="video-content flex-top-row">
+        <div class="primary-box pr-3">
+          <div class="main-video-container">
+            <video controls>
+              <source src="./assets/videos/nepal.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="tag-box">
+            <div class="right-icon">
+              <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="tag-list flex-row-start">
+              <div class="tag flex-css active">
+                <span> All </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Bombing </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Accidents </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Fire </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Robbery </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Shooting </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Football </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Music </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Programming </span>
+              </div>
+              <div class="tag flex-css">
+                <span> PC&nbsp;Games </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Chill </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Hang </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Peace </span>
+              </div>
+              <div class="tag flex-css">
+                <span> Attitude </span>
+              </div>
+            </div>
+          </div>
+          <div class="gevernace py-4">
+            <div class="title flex-row-start mb-3">
+              <h1 class="mr-3">Gevernace</h1>
+              <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="desc flex-row-sb">
+              <ul class="pl-3 flex-row-start">
+                <li>Fake News (65)</li>
+                <li>Not Newsworthy (65)</li>
+              </ul>
+              <div class="input-container flex-css">
+                <div class="form-group mr-3">
+                  <select id="cat" class="form-control">
+                    <option>Promote to</option>
+                    <option>Global 200</option>
+                    <option>Region 230</option>
+                  </select>
+                </div>
+                <div class="form-group mr-3">
+                  <select id="cat" class="form-control">
+                    <option>Move to</option>
+                    <option>Shooting</option>
+                    <option>Accident</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="secondary-box">
+          <div class="video-list">
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b2.png" alt="video" />
+            </div>
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b6.png" alt="video" />
+            </div>
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b7.png" alt="video" />
+            </div>
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b1.png" alt="video" />
+            </div>
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b3.png" alt="video" />
+            </div>
+            <div class="video-container">
+              <div class="play-wrapper flex-css">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="./assets/images/b4.png" alt="video" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
